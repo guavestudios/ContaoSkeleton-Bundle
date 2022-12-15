@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Guave\ContaoSkeletonBundle\:
+    resource: ../../../src
+    exclude: ../../../src/{Entity,Migrations,Resources,Tests}
+
+  Guave\ContaoSkeletonBundle\Controller\:
+    resource: ../../../src/Controller
+    public: true
