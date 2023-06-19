@@ -2,7 +2,7 @@
 	"name": "guave/contaoskeleton-bundle",
 	"description": "Skeleton for custom Contao 4 bundles",
 	"type": "contao-bundle",
-	"license": "MIT",
+	"license": "ISC",
 	"authors": [
 		{
 			"name": "Christopher Stadler",
@@ -17,24 +17,34 @@
 	"require-dev": {
 		"roave/security-advisories": "dev-latest"
 	},
+	"conflict": {
+		"contao/core": "*",
+		"contao/manager-plugin": "<2.0 || >=3.0"
+	},
 	"autoload": {
 		"psr-4": {
 			"Guave\\ContaoSkeletonBundle\\": "src/"
 		},
 		"classmap": [
-			"src/Resources/contao"
+			"contao/"
 		],
 		"exclude-from-classmap": [
-			"src/Resources/contao/config",
-			"src/Resources/contao/dca",
-			"src/Resources/contao/languages",
-			"src/Resources/contao/templates"
+			"contao/config/",
+			"contao/dca/",
+			"contao/languages/",
+			"contao/templates/"
 		]
+	},
+	"config": {
+		"allow-plugins": {
+			"contao-components/installer": true,
+			"contao/manager-plugin": true,
+			"php-http/discovery": false
+		}
 	},
 	"extra": {
 		"contao-manager-plugin": "Guave\\ContaoSkeletonBundle\\ContaoManager\\Plugin"
 	},
-	"minimum-stability": "stable",
 	"support": {
 		"issues": "https://github.com/guavestudios/contaoskeleton-bundle/issues",
 		"source": "https://github.com/guavestudios/contaoskeleton-bundle"

@@ -3,4 +3,8 @@
 /vendor/
 
 # PhpUnit
+/.phpunit.result.cache
 /phpunit.xml
+
+# Tools
+/tools/*/vendor
