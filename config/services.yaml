@@ -1,6 +1,7 @@
 services:
   _defaults:
     autoconfigure: true
+    autowire: true
 
   Guave\ContaoSkeletonBundle\Controller\:
     resource: ../src/Controller

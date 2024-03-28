@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Guave\ContaoSkeletonBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
