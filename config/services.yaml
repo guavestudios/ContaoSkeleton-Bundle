@@ -3,6 +3,6 @@ services:
     autoconfigure: true
     autowire: true
 
-  Guave\ContaoSkeletonBundle\Controller\:
-    resource: ../src/Controller
-    public: true
+  Guave\ContaoSkeletonBundle\:
+    resource: ../src
+    exclude: ../src/{ContaoManager,DependencyInjection}
