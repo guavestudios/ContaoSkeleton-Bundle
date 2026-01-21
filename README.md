@@ -4,8 +4,8 @@ This contao module is a template for building our own.
 
 ## Requirements
 
-- Contao 4.13+
-- PHP 7.4 or 8.0+
+- Contao 5.0+
+- PHP 8.1+
 
 ## Install
 
